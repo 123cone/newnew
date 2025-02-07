@@ -1,0 +1,77 @@
+.favs-container {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-height: 90vh; /* Ensures scrolling if content overflows */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.polaroid {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 250px;
+  transform: rotate(-3deg); /* Slight tilt for a scrapbook feel */
+  transition: transform 0.3s ease-in-out;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05); /* Straightens & enlarges slightly on hover */
+}
+
+.polaroid-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+
+.caption {
+  font-family: "Caveat", cursive; /* Handwritten font */
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Ensuring proper scrolling */
+.favs-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.favs-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.favs-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .polaroid {
+    max-width: 200px;
+    padding: 0.8rem;
+  }
+
+  .caption {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .polaroid {
+    max-width: 150px;
+    padding: 0.6rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,7 @@
+body {
+  background-color: #e9cff1;
+}
+
+#root{
+  overflow-y: auto;
+}

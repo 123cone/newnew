@@ -1,0 +1,50 @@
+.memories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: black;
+  min-height: 100vh;
+}
+
+.title {
+  margin-top: 3rem;
+  font-size: 4.5rem;
+  font-weight: boldder;
+  font-family: 'Cedarville Cursive', cursive;
+  font-weight: bold;
+  color: #ff0040;
+  margin-bottom: 2rem;
+}
+
+.polaroid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.polaroid {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.polaroid:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.polaroid:hover {
+  transform: scale(1.05);
+}
+
+.polaroid-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

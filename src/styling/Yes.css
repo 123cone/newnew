@@ -1,0 +1,159 @@
+#root {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1rem;
+  color: #760000;
+  overflow: hidden;
+  background-color: #fad0c4 ;
+}
+
+
+@media (max-width: 48rem) {
+  body {
+    font-size: 0.875rem;
+  }
+  .yes {
+    font-size: 1.25rem; /* Reduce the base font size of .yes container */
+    padding-top: 3rem; /* Adjust padding */
+  }
+  .question h1 {
+    font-size: 1.25rem;
+  }
+  .question p {
+    font-size: 1rem;
+  }
+  .cta-buttons {
+    margin-top: 1rem;
+  }
+  .yes-button, .no-button {
+    font-size: 1rem; /* Scale button text size */
+    padding: 0.8rem 1.5rem; /* Adjust button size */
+  }
+  .yes-gif, .no-gif {
+    max-width: 80%; /* Scale gif width */
+    height: auto;
+  }
+  #root {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  body {
+    font-size: 0.75rem;
+  }
+  .yes {
+    font-size: 1rem; /* Further reduce font size */
+    padding-top: 2rem; /* Adjust padding */
+  }
+  .question h1 {
+    font-size: 1.125rem;
+  }
+  .question p {
+    font-size: 0.875rem;
+  }
+  .cta-buttons {
+    margin-top: 1rem;
+  }
+  .yes-button, .no-button {
+    font-size: 0.875rem; /* Scale button text size further */
+    padding: 0.6rem 1rem; /* Adjust button size */
+  }
+  .yes-gif, .no-gif {
+    max-width: 70%; /* Scale gif width */
+    height: auto;
+  }
+  #root {
+    padding: 0.5rem;
+  }
+}
+
+.yes {
+  color: #760000;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cedarville Cursive', cursive;
+  color: #333;
+  text-align: center;
+  padding-top: 5rem;
+  box-sizing: border-box;
+}
+
+.question h1 {
+  font-size: 4rem;
+  color: #e0245e;
+  font-weight: bold;
+}
+
+.question p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.yes-button,
+.no-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 1.875rem;
+}
+
+.yes-button {
+  background-color: #e0245e;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.yes-button:hover {
+  background-color: #d22d53;
+}
+
+.no-button {
+  background-color: #ffb6c1;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.no-button:hover {
+  background-color: #f97e9c;
+}
+
+.response {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #e0245e;
+}
+
+.no-text {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.no-skeleton {
+  width: 60%;
+  height: 1.25rem;
+  margin: 0.625rem auto;
+  color: #d22d53;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}

@@ -1,0 +1,85 @@
+.reasons-container {
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  max-height: 100vh; 
+  overflow-y: auto;
+}
+
+.reasons-title {
+  font-size: 6.5rem;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-weight: 10rem;
+  color: #ff0000;
+  padding-top: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 1.5rem;
+}
+
+.reasons-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.reasons-list li::before {
+  content: "🦋"; /* Butterfly emoji */
+  margin-right: 10px;
+}
+
+.reason-item {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 3.0rem;
+  color: #e30988;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.reason-item:nth-child(odd) {
+  color: #9614d0; /* Alternate text color */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .reasons-container{
+    padding: 0.5rem;
+  }
+  
+  .reasons-title {
+    font-size: 5rem; /* Reduce title size for smaller screens */
+  }
+
+  .reason-item {
+    font-size: 2rem; /* Adjust item text size */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .reasons-container{
+    padding: 0.5rem;
+  } 
+  .reasons-title {
+    font-size: 2.0rem; /* Further reduce title size for mobile screens */
+  }
+
+  .reason-item {
+    font-size: 1.0rem; /* Adjust item text size further for mobile */
+  }
+}
+
+
+.reasons-container::-webkit-scrollbar {
+  width: 8px; /* Set width of the scrollbar */
+}
+
+.reasons-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.reasons-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
